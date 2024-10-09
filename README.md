@@ -195,19 +195,19 @@ sudo wireshark
 
 ## Results
 
-This project successfully demonstrates:
+This project successfully setup for:
 
-- **Successful Deployment**: Established a multi-machine environment with Kali Linux, Ubuntu, CentOS, and Windows Server, allowing for comprehensive testing of vulnerabilities and security practices.
+- **Successful Deployment**: Establishing a multi-machine environment with Kali Linux, Ubuntu, CentOS, and Windows Server, allowing for comprehensive testing of vulnerabilities and security practices.
 
-- **Vulnerability Assessments**: Conducted various penetration tests and vulnerability assessments using tools like Nmap and Metasploit, identifying and documenting potential security weaknesses.
+- **Vulnerability Assessments**: Conducting various penetration tests and vulnerability assessments using tools like Nmap and Metasploit, identifying and documenting potential security weaknesses.
 
-- **Effective Defense Mechanisms**: Implemented firewall configurations and intrusion detection systems (IDS) like Snort, successfully blocking unauthorized access and logging attempted breaches.
+- **Effective Defense Mechanisms**: Implementing firewall configurations and intrusion detection systems (IDS) like Snort, successfully blocking unauthorized access and logging attempted breaches.
 
-- **Network Traffic Analysis**: Utilized Wireshark for real-time network traffic analysis, enabling monitoring of data flow and detection of suspicious activities within the lab environment.
+- **Network Traffic Analysis**: Utilizing Wireshark for real-time network traffic analysis, enabling monitoring of data flow and detection of suspicious activities within the lab environment.
 
-- **Hands-On Learning**: Facilitated practical learning experiences in incident response, threat detection, and remediation techniques through simulated cyberattacks and defenses.
+- **Hands-On Learning**: Facilitating practical learning experiences in incident response, threat detection, and remediation techniques through simulated cyberattacks and defenses.
 
-- **Automated Management**: Integrated automation tools like Ansible for managing and configuring multiple VMs efficiently, streamlining operations and enhancing overall lab productivity.
+- **Automated Management**: Integrating automation tools like Ansible for managing and configuring multiple VMs efficiently, streamlining operations and enhancing overall lab productivity.
 
 ## Contributing
 
