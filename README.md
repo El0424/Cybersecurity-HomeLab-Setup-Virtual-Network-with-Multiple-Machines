@@ -65,6 +65,7 @@ The lab consists of:
 
 ### Installation and Set-up
 
+
 **Step 1: Install Virtualization Software**
    
 1. **Install VirtualBox**
@@ -88,6 +89,7 @@ Open the link [Download Virtualbox](https://www.virtualbox.org/wiki/Downloads) a
    - **Access Preferences:** Go to `File > Preferences > Extensions`.
    - **Add New Package:** Click the **Add New Package** button, select the downloaded Extension Pack, and install it.
 
+
 **Step 2: Create Virtual Machines (VMs)**
 
 1. **Download OS Images:**
@@ -95,6 +97,64 @@ Open the link [Download Virtualbox](https://www.virtualbox.org/wiki/Downloads) a
    - **Kali Linux:** Download Kali Linux from [Download Kali Linux](https://www.kali.org/downloads/).
    - **Windows(optional): Download Windows Evaluation Versions from [Download Windows Evaluation Versions](https://www.microsoft.com/en-us/evalcenter)
 
+2. **Create a New Virtual Machine**
+   - **Open VirtualBox**: Launch the VirtualBox software.
+   - **Click New**: Click the New button to create a new virtual machine.
+   - **Name and Configure**:
+   - **Name**: Give your VM a name (e.g., "Ubuntu", "Kali").
+   - **Type and Version**: Select Linux as the type and choose the appropriate version (Ubuntu or Debian for Kali).
+   - **Memory**: Allocate at least 2GB of RAM (4GB or more recommended if possible).
+   - **Hard Disk**: Create a new virtual hard disk with at least 20GB of storage.
+
+3. **Install the Operating System**
+   -**Start the VM**: Start the newly created VM.
+   -**Select ISO File**: Choose the downloaded ISO image of your desired operating system (Ubuntu or Kali Linux) as the startup disk.
+   -**Follow Installation Instructions**:
+   - **Language and Keyboard**: Select your preferred language and keyboard layout.
+   - **Partitioning**: Choose the default partitioning scheme unless you have specific requirements.
+   - **User Account**: Create a user account and set a password.
+   - **Installation Completion**: Complete the installation process and reboot the VM.
+
+
+**Step 3: Set Up Networking**
+
+1. **Configure Network Settings**:
+   - **Open Settings**: Go to `Settings > Network`.
+   - **Attach to Network**: For direct access to your home network, choose a Bridged Adapter. For a private network, select NAT Network. We'll use NAT Network for this tutorial.
+   
+2. **Create a NAT Network**:
+   - **Open Preferences**: Go to `File > Preferences > Network`.
+   - **Add NAT Network**: Click the NAT Networks tab, then click Add.
+   - **Configure Settings**: Configure the NAT network settings (e.g., 10.0.2.0/24).
+   
+3. **Connect VM to NAT Network**:
+   - **Open VM Settings**: Go to the settings of each VM (`Settings > Network > Adapter 1`).
+   - **Select NAT Network**: Choose Attached to: NAT Network and select the created NAT network.
+
+
+**Step4 4: Install and Configure Tools**
+
+1. **Ubuntu  Virtual Machine**
+   - **Update the system:** Ensure your system is up-to-date using:
+   
+   ```bash
+      sudo apt update && sudo apt upgrade -y
+   ```
+   - **Install essential tools:**
+
+```bash
+    sudo apt install -y build-essential git curl wget
+```
+2. **Kali Linux Virtual Machine**
+   - **Update the system:**
+     
+```bash
+    sudo apt update && sudo apt upgrade -y
+```
+   - **Install additional tools (optional):**
+   ```bash
+    sudo apt install -y nmap wireshark metasploit-framework
+```
 
 
 ## Results
