@@ -1,4 +1,4 @@
-# Cybersecurity HomeLab Set-up: Virtual Network with Multiple Machines
+# Cybersecurity HomeLab Setup: Virtual Network with Multiple Machines
 
 ## Table of Contents
 1. [Overview](#overview)
