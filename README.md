@@ -5,20 +5,20 @@
 2. [Features](#features)
 3. [Tools and Technologies](#tools-and-technologies)
 4. [Lab Environment Setup](#lab-environment-setup)
-    - [Requirements](#requirements)
+    - [Prerequisites](#prerequisites)
     - [Network Diagram](#network-diagram)
     - [Installation](#installation)
 6. [Usage](#usage)
 6. [Results](#results)
 7. [Contributing](#contributing)
-8. [Conclusion](#license)
+8. [Conclusion](#conclusion)
 9. [Contact](#contact)
 
 ---
 
 ## Overview
 
-This project focuses on creating a Cybersecurity Home Lab utilizing VirtualBox to establish a virtual network configured as a NAT Network. The lab consists of multiple virtual machines, including Kali Linux for penetration testing, Ubuntu for server configurations, and Windows for testing Windows-specific vulnerabilities. The NAT Network allows seamless internet access for the VMs while keeping them isolated from the host network, enhancing security and preventing unintended exposure. Within this environment, key security tools such as Metasploit, Nmap, and Wireshark are installed to facilitate hands-on learning experiences. The lab also can incorporates automation tools like Ansible and monitoring solutions like Zabbix to streamline operations and track network activities. 
+This project focuses on creating a Cybersecurity Home Lab utilizing VirtualBox to establish a virtual network configured as a NAT Network. The lab consists of multiple virtual machines, including Kali Linux for penetration testing, Ubuntu/CentOS for server configurations, and Windows for testing Windows-specific vulnerabilities. The NAT Network allows seamless internet access for the VMs while keeping them isolated from the host network, enhancing security and preventing unintended exposure. Within this environment, key security tools such as Metasploit, Nmap, and Wireshark are installed to facilitate hands-on learning experiences. The lab also can incorporates automation tools like Ansible and monitoring solutions like Zabbix to streamline operations and track network activities. 
 
   This setup provides an ideal platform for experimenting with real-world scenarios, including vulnerability assessments, threat detection, and incident response.
 
@@ -36,17 +36,15 @@ This project focuses on creating a Cybersecurity Home Lab utilizing VirtualBox t
 
 This project leverages the following tools and technologies:
 
-- **Operating Systems:** Kali Linux, Ubuntu, Windows Server 2019
-- **Penetration Testing Tools:** Metasploit, Nmap, Burp Suite, Aircrack-NG
-- **Security Tools:** Snort, Suricata, pfSense Firewall, Fail2Ban
-- **Monitoring Tools:** Zabbix, ELK Stack (Elasticsearch, Logstash, Kibana)
-- **Vulnerability Scanners:** OpenVAS, Nikto, Nessus
+- **Operating Systems:** Kali Linux, Ubuntu, CentOS, Windows Server 2022
+- **Penetration Testing Tools:** Nmap
+- **Security Tools:** Firewall
 - **Virtualization Platform:** VirtualBox, VMware Workstation
-- **Languages:** Bash, Python
+- **Languages:** Bash, Powershell, Python
 
 ## Lab Environment Setup
 
-### Requirements
+### Prerequisites
 
 - **Virtualization Platform:** VirtualBox or VMware Workstation
 - **Minimum Hardware:**
@@ -89,23 +87,6 @@ The lab consists of:
     ```bash
     bash tools/install.sh
     ```
-
-## Project Components
-
-### Attack Vectors
-
-- **Network Scanning:** Nmap and Zenmap were used to discover open ports and vulnerabilities in services.
-- **Web Application Exploits:**
-  - **SQL Injection:** Exploiting vulnerable web apps to bypass authentication.
-  - **Cross-Site Scripting (XSS):** Injecting malicious scripts to hijack sessions.
-- **Wireless Attacks:** Cracking WPA/WPA2 passwords using Aircrack-NG.
-
-### Defense Mechanisms
-
-- **Firewall Rules:** Configured pfSense with strict traffic rules between network zones.
-- **IDS/IPS:** Implemented Snort/Suricata to detect suspicious activities in real-time.
-- **Log Monitoring:** Deployed ELK stack to collect and analyze logs for threat detection.
-- **Patch Management:** Automated security patches using Ansible for regular updates.
 
 ## Usage
 
@@ -160,7 +141,7 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 
 Please make sure your code follows the project's coding standards and passes all tests.
 
-## License
+## Conclusion
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
