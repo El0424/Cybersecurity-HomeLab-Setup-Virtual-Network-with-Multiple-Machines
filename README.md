@@ -60,8 +60,8 @@ The lab consists of:
 
 - **Attack VM:** Kali Linux
 - **Target VM:** Ubuntu Server with vulnerable web applications
-- **Firewall:** pfSense configured between the attacker and target network
-- **IDS/IPS:** Snort/Suricata monitoring traffic between segments
+- **Firewall:** ufw configured between the attacker and target network
+- **Networking Tool:** Nmap, Wireshark
 
 ### Installation and Setup
 
