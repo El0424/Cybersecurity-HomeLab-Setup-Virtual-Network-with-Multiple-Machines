@@ -8,11 +8,10 @@
     - [Prerequisites](#prerequisites)
     - [Network Diagram](#network-diagram)
     - [Installation and Set-up](#installation-and-set-up)
-6. [Usage](#usage)
-6. [Results](#results)
-7. [Contributing](#contributing)
-8. [Conclusion](#conclusion)
-9. [Contact](#contact)
+5. [Results](#results)
+6. [Contributing](#contributing)
+7. [Conclusion](#conclusion)
+8. [Contact](#contact)
 
 ---
 
@@ -66,58 +65,37 @@ The lab consists of:
 
 ### Installation and Set-up
 
-1. **Install Virtualization Software**
+**Step 1: Install Virtualization Software**
    
-   - **Install VirtualBox**
+1. **Install VirtualBox**
 
 Open the link [Download Virtualbox](https://www.virtualbox.org/wiki/Downloads) and download your OS installer (VirtualBox for MacOS/WindowsOS/Linux)
 
+2. **Install VirtualBox:**
+
+- **Windows:** Double-click the downloaded `.exe` file and follow the on-screen instructions.
+- **macOS:** Double-click the downloaded `.dmg` file, then move the VirtualBox icon to your Applications folder.
+- **Linux:** Use your system's package manager to install VirtualBox. For example, on Ubuntu, you would run:
 
 
+  ```bash
+  sudo apt update
+  sudo apt install virtualbox
 
-    ```bash
-    git clone https://github.com/yourusername/projectname.git
-    cd projectname
-    ```
+3. **Install VirtualBox Extension Pack:**
+    - **Download the Extension Pack:** Go to the [Download VirtualBox](https://www.virtualbox.org/wiki/Downloads) and find the Extension Pack.
+   - **Open VirtualBox:** Launch the VirtualBox software.
+   - **Access Preferences:** Go to `File > Preferences > Extensions`.
+   - **Add New Package:** Click the **Add New Package** button, select the downloaded Extension Pack, and install it.
 
-3. **Deploy Virtual Machines:**
-    - Follow the instructions in the `setup/` folder to import the pre-configured VMs.
-    - Alternatively, use Vagrant to automate the setup:
-      ```bash
-      vagrant up
-      ```
+**Step 2: Create Virtual Machines (VMs)**
 
-4. **Configure Networking:**
-    - Set up a virtual network as per the network diagram, with the firewall, internal network, and DMZ zones.
+1. **Download OS Images:**
+   - **Ubuntu:** Download the Ubuntu desktop image from [Download Ubuntu](https://ubuntu.com/download/desktop).
+   - **Kali Linux:** Download Kali Linux from [Download Kali Linux](https://www.kali.org/downloads/).
+   - **Windows(optional): Download Windows Evaluation Versions from [Download Windows Evaluation Versions](https://www.microsoft.com/en-us/evalcenter)
 
-5. **Install Required Tools:**
-    - Run the `install.sh` script in the `tools/` folder to install necessary penetration testing and defense tools on each machine.
 
-    ```bash
-    bash tools/install.sh
-    ```
-
-## Usage
-
-Once the lab is set up, you can begin penetration testing and applying security measures:
-
-1. **Launch the Attack:**
-    - Run automated penetration testing scripts:
-      ```bash
-      bash attack/auto_attack.sh
-      ```
-
-2. **Monitor Defenses:**
-    - Watch Snort or Suricata alerts in real-time:
-      ```bash
-      sudo tail -f /var/log/snort/alerts
-      ```
-
-3. **Analyze Logs:**
-    - View collected logs in Kibana (access through your browser at `http://localhost:5601`).
-
-4. **Generate Reports:**
-    - Generate detailed vulnerability assessment reports using OpenVAS.
 
 ## Results
 
