@@ -173,7 +173,7 @@ Open the link [Download Virtualbox](https://www.virtualbox.org/wiki/Downloads) a
    sudo apt install ufw
    sudo ufw enable
    sudo ufw allow ssh
-   sudo ufw allow from 10.0.2.16
+   sudo ufw allow from 10.0.2.5 #Replace with the IP of Kali VM
 ```
 3. **Analyze Network Traffic**
    - **Install Wireshark**
