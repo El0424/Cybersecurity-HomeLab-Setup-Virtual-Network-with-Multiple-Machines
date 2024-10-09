@@ -17,7 +17,7 @@
 
 ## Overview
 
-This project focuses on creating a Cybersecurity Home Lab utilizing VirtualBox to establish a virtual network configured as a NAT Network. The lab consists of multiple virtual machines, including Kali Linux for penetration testing, Ubuntu/CentOS for server configurations, and Windows for testing Windows-specific vulnerabilities. The NAT Network allows seamless internet access for the VMs while keeping them isolated from the host network, enhancing security and preventing unintended exposure. Within this environment, key security tools such as Metasploit, Nmap, and Wireshark are installed to facilitate hands-on learning experiences. The lab also can incorporates automation tools like Ansible and monitoring solutions like Zabbix to streamline operations and track network activities. 
+This project focuses on creating a Cybersecurity Home Lab utilizing VirtualBox to establish a virtual network configured as a NAT Network. The lab consists of multiple virtual machines, including Kali Linux for penetration testing, Ubuntu/CentOS for server configurations, and Windows for testing Windows-specific vulnerabilities. The NAT Network allows seamless internet access for the VMs while keeping them isolated from the host network, enhancing security and preventing unintended exposure. Within this environment, key security tools such as Nmap, and Wireshark are installed to facilitate hands-on learning experiences. The lab also can incorporates automation tools like Ansible and monitoring solutions like Zabbix to streamline operations and track network activities. 
 
   This setup provides an ideal platform for experimenting with real-world scenarios, including vulnerability assessments, threat detection, and incident response.
 
@@ -35,8 +35,8 @@ This project focuses on creating a Cybersecurity Home Lab utilizing VirtualBox t
 
 This project leverages the following tools and technologies:
 
-- **Operating Systems:** Kali Linux, Ubuntu, CentOS, Windows Server 2022
-- **Penetration Testing Tools:** Nmap
+- **Operating Systems:** Kali Linux, Ubuntu, CentOS(Optional), Windows Server 2022(Optional)
+- **Penetration Testing Tools:** Nmap, Wireshark
 - **Security Tools:** Firewall
 - **Virtualization Platform:** VirtualBox, VMware Workstation
 - **Languages:** Bash, Powershell, Python
