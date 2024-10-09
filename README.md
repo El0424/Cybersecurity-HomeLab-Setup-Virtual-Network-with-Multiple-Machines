@@ -7,7 +7,7 @@
 4. [Lab Environment Setup](#lab-environment-setup)
     - [Prerequisites](#prerequisites)
     - [Network Diagram](#network-diagram)
-    - [Installation and Set-up](#installation-and-set-up)
+    - [Installation and Setup](#installation-and-setup)
 5. [Results](#results)
 6. [Contributing](#contributing)
 7. [Conclusion](#conclusion)
@@ -63,7 +63,7 @@ The lab consists of:
 - **Firewall:** pfSense configured between the attacker and target network
 - **IDS/IPS:** Snort/Suricata monitoring traffic between segments
 
-### Installation and Set-up
+### Installation and Setup
 
 
 **Step 1: Install Virtualization Software**
@@ -137,7 +137,7 @@ Open the link [Download Virtualbox](https://www.virtualbox.org/wiki/Downloads) a
 1. **Ubuntu  Virtual Machine**
    - **Update the system:** Ensure your system is up-to-date using:
    
-   ```bash
+```bash
       sudo apt update && sudo apt upgrade -y
    ```
    - **Install essential tools:**
@@ -152,9 +152,45 @@ Open the link [Download Virtualbox](https://www.virtualbox.org/wiki/Downloads) a
     sudo apt update && sudo apt upgrade -y
 ```
    - **Install additional tools (optional):**
-   ```bash
+
+```bash
     sudo apt install -y nmap wireshark metasploit-framework
 ```
+
+**Step 5: Simulate Network Attacks and Defenses**
+
+1. **Simulate an Attack**
+   - Use Kali Linux: On your Kali Linux VM, perform a basic network scan against the Ubuntu VM:
+     
+ ```bash
+     nmap -A 10.0.2.15
+```
+***(replace 10.0.2.15 with the actual IP of your Ubuntu VM)***
+
+2. **Defend Against Attacks**
+   
+ ```bash
+   sudo apt install ufw
+   sudo ufw enable
+   sudo ufw allow ssh
+   sudo ufw allow from 10.0.2.16
+```
+3. **Analyze Network Traffic**
+   - **Install Wireshark**
+On your Ubuntu VM, install Wireshark using the following command:
+```bash
+sudo apt install wireshark
+sudo wireshark
+```
+
+**Step 6: Document Your Setup**
+
+1. **Network Diaagram**
+   - **Create a visual representation of your virtual network using a diagramming tool like [draw.io](https://www.draw.io).**
+   - **Include IP addresses and machine names for clarity.**
+
+2. **Configuration Details**
+   - **Record the configurations and settings for each VM, including network settings, installed tools, and any specific changes made.**
 
 
 ## Results
@@ -173,24 +209,24 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 
 1. Fork the repository.
 2. Create a new branch:
-    ```bash
+```bash
     git checkout -b feature-branch
-    ```
+```
 3. Commit your changes:
-    ```bash
+ ```bash
     git commit -m "Add your message"
-    ```
+ ```
 4. Push the branch:
-    ```bash
+ ```bash
     git push origin feature-branch
-    ```
+ ```
 5. Open a Pull Request.
 
 Please make sure your code follows the project's coding standards and passes all tests.
 
 ## Conclusion
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+**Setting up a cybersecurity home lab with a virtual network and multiple machines offers a robust platform for enhancing your cybersecurity skills in a controlled environment. This project allows you to experiment with various operating systems, security tools, and network configurations, enabling hands-on experience with real-world scenarios. By engaging in penetration testing, incident response exercises, and network monitoring, you'll gain invaluable insights and practical knowledge that will prepare you for a successful career in cybersecurity. Whether you're a beginner or an experienced professional, this home lab serves as a versatile and flexible space for continuous learning and skill development.**
 
 ## Contact
 
