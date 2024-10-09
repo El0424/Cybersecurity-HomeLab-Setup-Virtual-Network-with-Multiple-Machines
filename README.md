@@ -131,7 +131,7 @@ Open the link [Download Virtualbox](https://www.virtualbox.org/wiki/Downloads) a
    - **Open VM Settings**: Go to the settings of each VM (`Settings > Network > Adapter 1`).
    - **Select NAT Network**: Choose Attached to: NAT Network and select the created NAT network.
 
-![Network Configuration](https://github.com/El0424/Cybersecurity-HomeLab-Setup-Virtual-Network-with-Multiple-Machines/blob/main/networkdiagram.png)
+![Network Configuration](https://github.com/El0424/Cybersecurity-HomeLab-Setup-Virtual-Network-with-Multiple-Machines/blob/main/diagram.png)
 
 
 
