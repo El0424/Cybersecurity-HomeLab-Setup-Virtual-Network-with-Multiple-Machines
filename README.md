@@ -131,6 +131,9 @@ Open the link [Download Virtualbox](https://www.virtualbox.org/wiki/Downloads) a
    - **Open VM Settings**: Go to the settings of each VM (`Settings > Network > Adapter 1`).
    - **Select NAT Network**: Choose Attached to: NAT Network and select the created NAT network.
 
+![Network Configuration](https://github.com/El0424/Cybersecurity-HomeLab-Setup-Virtual-Network-with-Multiple-Machines/blob/main/ping.png)
+
+
 
 **Step4 4: Install and Configure Tools**
 
@@ -166,6 +169,8 @@ Open the link [Download Virtualbox](https://www.virtualbox.org/wiki/Downloads) a
      nmap -A 10.0.2.15
 ```
 ***(replace 10.0.2.15 with the actual IP of your Ubuntu VM)***
+
+**Nmap Scan: `Kali <-nmap-> Ubuntu`**
 
 ![Nmap Scan](https://github.com/El0424/Cybersecurity-HomeLab-Setup-Virtual-Network-with-Multiple-Machines/blob/main/nmap%20-v%20-A.png)
 
