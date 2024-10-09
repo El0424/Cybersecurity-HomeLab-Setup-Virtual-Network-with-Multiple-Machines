@@ -167,7 +167,7 @@ Open the link [Download Virtualbox](https://www.virtualbox.org/wiki/Downloads) a
 ```
 ***(replace 10.0.2.15 with the actual IP of your Ubuntu VM)***
 
-![Nmap Scan](path/to/your/network-diagram.png)
+![Nmap Scan](https://github.com/El0424/Cybersecurity-HomeLab-Setup-Virtual-Network-with-Multiple-Machines/blob/main/nmap%20-v%20-A.png)
 
 
 
