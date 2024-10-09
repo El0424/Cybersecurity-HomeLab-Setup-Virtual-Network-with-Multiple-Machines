@@ -197,11 +197,17 @@ sudo wireshark
 
 This project successfully demonstrates:
 
-- The ability to exploit various vulnerabilities and simulate attacks in a secure, isolated environment.
-- Deployment of defense mechanisms that effectively detect, block, and log malicious activities.
-- Automated scripts that enhance both offensive and defensive cybersecurity capabilities.
+- **Successful Deployment**: Established a multi-machine environment with Kali Linux, Ubuntu, CentOS, and Windows Server, allowing for comprehensive testing of vulnerabilities and security practices.
 
-The results include detailed reports on vulnerabilities found and how they were mitigated, as well as lessons learned from improving network security.
+- **Vulnerability Assessments**: Conducted various penetration tests and vulnerability assessments using tools like Nmap and Metasploit, identifying and documenting potential security weaknesses.
+
+- **Effective Defense Mechanisms**: Implemented firewall configurations and intrusion detection systems (IDS) like Snort, successfully blocking unauthorized access and logging attempted breaches.
+
+- **Network Traffic Analysis**: Utilized Wireshark for real-time network traffic analysis, enabling monitoring of data flow and detection of suspicious activities within the lab environment.
+
+- **Hands-On Learning**: Facilitated practical learning experiences in incident response, threat detection, and remediation techniques through simulated cyberattacks and defenses.
+
+- **Automated Management**: Integrated automation tools like Ansible for managing and configuring multiple VMs efficiently, streamlining operations and enhancing overall lab productivity.
 
 ## Contributing
 
