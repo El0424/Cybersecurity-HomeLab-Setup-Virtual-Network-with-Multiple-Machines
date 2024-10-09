@@ -54,7 +54,7 @@ This project leverages the following tools and technologies:
 
 ### Network Diagram
 
-![Network Diagram](https://github.com/El0424/Cybersecurity-HomeLab-Setup-Virtual-Network-with-Multiple-Machines/blob/main/Your%20paragraph%20text.png)
+![Network Diagram](https://github.com/El0424/Cybersecurity-HomeLab-Setup-Virtual-Network-with-Multiple-Machines/blob/main/diagram.png)
 
 The lab consists of:
 
@@ -131,7 +131,7 @@ Open the link [Download Virtualbox](https://www.virtualbox.org/wiki/Downloads) a
    - **Open VM Settings**: Go to the settings of each VM (`Settings > Network > Adapter 1`).
    - **Select NAT Network**: Choose Attached to: NAT Network and select the created NAT network.
 
-![Network Configuration](https://github.com/El0424/Cybersecurity-HomeLab-Setup-Virtual-Network-with-Multiple-Machines/blob/main/diagram.png)
+![Network Configuration](https://github.com/El0424/Cybersecurity-HomeLab-Setup-Virtual-Network-with-Multiple-Machines/blob/main/ping.png)
 
 
 
