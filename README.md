@@ -193,6 +193,8 @@ sudo apt install wireshark
 sudo wireshark
 ```
 
+![Wireshark](https://github.com/El0424/Cybersecurity-HomeLab-Setup-Virtual-Network-with-Multiple-Machines/blob/main/wireshark.png)
+
 **Step 6: Document Your Setup**
 
 1. **Network Diaagram**
