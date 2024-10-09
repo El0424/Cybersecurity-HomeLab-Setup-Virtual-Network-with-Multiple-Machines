@@ -167,6 +167,11 @@ Open the link [Download Virtualbox](https://www.virtualbox.org/wiki/Downloads) a
 ```
 ***(replace 10.0.2.15 with the actual IP of your Ubuntu VM)***
 
+![Nmap Scan](path/to/your/network-diagram.png)
+
+
+
+
 2. **Defend Against Attacks**
    
  ```bash
