@@ -7,7 +7,7 @@
 4. [Lab Environment Setup](#lab-environment-setup)
     - [Prerequisites](#prerequisites)
     - [Network Diagram](#network-diagram)
-    - [Installation](#installation)
+    - [Installation and Set-up](#installation-and-set-up)
 6. [Usage](#usage)
 6. [Results](#results)
 7. [Contributing](#contributing)
@@ -46,6 +46,7 @@ This project leverages the following tools and technologies:
 
 ### Prerequisites
 
+- **Basic Knowledge of Computer Networking**
 - **Virtualization Platform:** VirtualBox or VMware Workstation
 - **Minimum Hardware:**
   - 16 GB RAM
@@ -63,25 +64,33 @@ The lab consists of:
 - **Firewall:** pfSense configured between the attacker and target network
 - **IDS/IPS:** Snort/Suricata monitoring traffic between segments
 
-### Installation
+### Installation and Set-up
 
-1. **Clone the repository:**
+1. **Install Virtualization Software**
+   
+   - **Install VirtualBox**
+
+Open the link [Download Virtualbox](https://www.virtualbox.org/wiki/Downloads) and download your OS installer (VirtualBox for MacOS/WindowsOS/Linux)
+
+
+
+
     ```bash
     git clone https://github.com/yourusername/projectname.git
     cd projectname
     ```
 
-2. **Deploy Virtual Machines:**
+3. **Deploy Virtual Machines:**
     - Follow the instructions in the `setup/` folder to import the pre-configured VMs.
     - Alternatively, use Vagrant to automate the setup:
       ```bash
       vagrant up
       ```
 
-3. **Configure Networking:**
+4. **Configure Networking:**
     - Set up a virtual network as per the network diagram, with the firewall, internal network, and DMZ zones.
 
-4. **Install Required Tools:**
+5. **Install Required Tools:**
     - Run the `install.sh` script in the `tools/` folder to install necessary penetration testing and defense tools on each machine.
 
     ```bash
