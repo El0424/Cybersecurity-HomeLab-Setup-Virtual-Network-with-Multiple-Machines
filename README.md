@@ -232,5 +232,5 @@ Please make sure your code follows the project's coding standards and passes all
 
 If you have any questions or feedback, feel free to reach out:
 
-- GitHub: [yourusername](https://github.com/yourusername)
-- Email: youremail@example.com
+- GitHub: [yourusername](https://github.com/El0424)
+- Email: arnelcontinedojr@gmail.com
